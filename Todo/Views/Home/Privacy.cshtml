@@ -1,3 +1,4 @@
+@model PrivacyViewModel
 @{
    ViewData["Title"] = "Privacy Policy of ";
 }
@@ -5,13 +6,8 @@
 
 <p>Policy privacy:
 <ol>
-   <li>
-      You can't steal this website because I said that
-   </li>
-   <li>
-      I love .NET
-   </li>
-   <li>
-      Just kidding with point 2
-   </li>
+      @foreach (var t in Model.PrivacyList)
+      {
+      <li>@t.PrivacyContent</li>
+      }
 </ol>

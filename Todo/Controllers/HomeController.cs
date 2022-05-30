@@ -4,6 +4,8 @@ using Todo.Models;
 using Microsoft.Data.Sqlite;
 using Todo.Models.ViewModels;
 using Contact.Models;
+using Privacy.Models;
+using Privacy.Models.ViewModels;
 namespace Todo.Controllers;
 
 public class HomeController : Controller
@@ -23,7 +25,8 @@ public class HomeController : Controller
 
    public IActionResult Privacy()
    {
-      return View();
+      var privacyListViewModel = GetAllPrivacies();
+      return View(privacyListViewModel);
    }
 
    public IActionResult Todo()
@@ -45,6 +48,48 @@ public class HomeController : Controller
       return Json(todo);
    }
 
+   internal PrivacyViewModel GetAllPrivacies()
+   {
+      List<PrivacyItem> privacyList = new();
+
+      using (SqliteConnection con =
+             new SqliteConnection("Data Source=db.sqlite"))
+      {
+         using (var tableCmd = con.CreateCommand())
+         {
+            con.Open();
+            tableCmd.CommandText = "SELECT * FROM privacy";
+
+            using (var reader = tableCmd.ExecuteReader())
+            {
+               if (reader.HasRows)
+               {
+                  while (reader.Read())
+                  {
+                     privacyList.Add(
+                         new PrivacyItem
+                         {
+                            Id = reader.GetInt32(0),
+                            PrivacyContent = reader.GetString(1),
+                         });
+                  }
+               }
+               else
+               {
+                  return new PrivacyViewModel
+                  {
+                     PrivacyList = privacyList
+                  };
+               }
+            };
+         }
+      }
+
+      return new PrivacyViewModel
+      {
+         PrivacyList = privacyList
+      };
+   }
    internal TodoViewModel GetAllTodos()
    {
       List<TodoItem> todoList = new();
