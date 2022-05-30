@@ -1,0 +1,13 @@
+@model TutorialViewModel
+@{
+   ViewData["Title"] = "Tutorial of ";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Tutorial:
+<ol>
+      @foreach (var t in Model.TutorialList)
+      {
+      <li>@t.Content</li>
+      }
+</ol>

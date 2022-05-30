@@ -6,6 +6,8 @@ using Todo.Models.ViewModels;
 using Contact.Models;
 using Privacy.Models;
 using Privacy.Models.ViewModels;
+using Tutorial.Models;
+using Tutorial.Models.ViewModels;
 namespace Todo.Controllers;
 
 public class HomeController : Controller
@@ -29,6 +31,11 @@ public class HomeController : Controller
       return View(privacyListViewModel);
    }
 
+   public IActionResult Tutorial()
+   {
+      var tutorialViewModel = GetAllTutorials();
+      return View(tutorialViewModel);
+   }
    public IActionResult Todo()
    {
       var todoListViewModel = GetAllTodos();
@@ -90,6 +97,50 @@ public class HomeController : Controller
          PrivacyList = privacyList
       };
    }
+   internal TutorialViewModel GetAllTutorials()
+   {
+      List<TutorialItem> tutorialList = new();
+
+      using (SqliteConnection con =
+             new SqliteConnection("Data Source=db.sqlite"))
+      {
+         using (var tableCmd = con.CreateCommand())
+         {
+            con.Open();
+            tableCmd.CommandText = "SELECT * FROM tutorial";
+
+            using (var reader = tableCmd.ExecuteReader())
+            {
+               if (reader.HasRows)
+               {
+                  while (reader.Read())
+                  {
+                     tutorialList.Add(
+                         new TutorialItem
+                         {
+                            Id = reader.GetInt32(0),
+                            Content = reader.GetString(1),
+
+                         });
+                  }
+               }
+               else
+               {
+                  return new TutorialViewModel
+                  {
+                     TutorialList = tutorialList
+                  };
+               }
+            };
+         }
+      }
+
+      return new TutorialViewModel
+      {
+         TutorialList = tutorialList
+      };
+   }
+
    internal TodoViewModel GetAllTodos()
    {
       List<TodoItem> todoList = new();
@@ -113,7 +164,7 @@ public class HomeController : Controller
                          {
                             Id = reader.GetInt32(0),
                             Name = reader.GetString(1),
-                            Category = reader.GetString(2)
+                            Category = reader.GetString(2),
                          });
                   }
                }
