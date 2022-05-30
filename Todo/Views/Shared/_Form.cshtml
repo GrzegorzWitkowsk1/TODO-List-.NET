@@ -7,7 +7,10 @@
          <label asp-for='Todo.Name' class='form-label'></label>
          <input asp-for='Todo.Id' type='hidden' class="form-control" />
          <input asp-for='Todo.Name' class="form-control" />
+         <label asp-for='Todo.Category' class='form-label'></label>
+         <input asp-for='Todo.Category' class="form-control" />
          <span asp-validation-for='Todo.Name' class="text-danger"></span>
+         <span asp-validation-for='Todo.Category' class="text-danger"></span>
       </div>
    </div>
    <div class="row justify-content-center">

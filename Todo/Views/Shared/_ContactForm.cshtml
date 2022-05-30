@@ -1,0 +1,17 @@
+@model ContactViewModel
+
+<h1> Write a message to the author of this amazing page</h1>
+<form id='form-action' asp-action='InsertContact' class='form-horizontal' method='post' role='form'>
+   <div asp-validation-summary='All' class='text-danger'></div>
+   <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10">
+         <label asp-for='Contact.Content' class='form-label'></label>
+         <input asp-for='Contact.Content' class="form-control" />
+      </div>
+   </div>
+   <div class="row justify-content-center">
+      <div class="col-xl-6 col-lg-8 col-md-8 col-sm-10 mt-3 mb-5">
+         <input type="submit" id="form-button" class="btn btn-success" value="Add Contact" />
+      </div>
+   </div>
+</form>
