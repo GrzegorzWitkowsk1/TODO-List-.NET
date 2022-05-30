@@ -8,49 +8,49 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Todo
 build_property.RootNamespace = Todo
-build_property.ProjectDir = C:\Users\grzes\Desktop\projekt .NET\Todo\
+build_property.ProjectDir = c:\Users\grzes\Desktop\projekt .NET\Todo\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\grzes\Desktop\projekt .NET\Todo
+build_property.MSBuildProjectDirectory = c:\Users\grzes\Desktop\projekt .NET\Todo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Contact.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Index.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Privacy.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Todo.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Home/Todo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb2RvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_ContactForm.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_ContactForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250YWN0Rm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_Form.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/_ViewImports.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/_ViewStart.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_Layout.cshtml]
+[c:/Users/grzes/Desktop/projekt .NET/Todo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-83yctkgmq0
